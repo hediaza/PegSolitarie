@@ -19,5 +19,14 @@ namespace PegSolitarie
 		void Update () {
 
 		}
+
+		/// <summary>
+		/// Metodo reservado de Unity para identificar cuando se selecciona un hueco con el ratón  
+		/// </summary>
+		public void OnMouseDown() {
+			if (Input.GetMouseButton(0)) {
+				GameController.Instance.SelectHoleBoard(gameObject);
+			}
+		}
 	}
 }
