@@ -19,6 +19,13 @@ namespace PegSolitarie
 
 		}
 
-
+		/// <summary>
+		/// Metodo reservado de Unity para identificar cuando se selecciona una ficha con el ratón  
+		/// </summary>
+		public void OnMouseDown() {
+			if (Input.GetMouseButton(0)) {
+				GameController.Instance.SelectPeg(gameObject);
+			}
+		}
 	}
 }
