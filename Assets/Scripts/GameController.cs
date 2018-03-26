@@ -28,6 +28,14 @@ namespace PegSolitarie
 		public IDictionary<string,IList<Coord>> boardsConfig;
 
 		/// <summary>
+		/// Constructor de la clase utilizado para inicializaciones
+		/// </summary>
+		public GameController()
+		{
+			this.holesBoard = new Dictionary<GameObject,Coord>();
+		}
+
+		/// <summary>
 		/// Metodo reservado de Unity para inicializar componente sin importar su estado
 		/// actua como un constructor de la clase con la diferencia que es controlado por el motor
 		/// </summary>
