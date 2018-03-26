@@ -56,5 +56,16 @@ namespace PegSolitarie
 			//TODO: implementación de animaciones...
 		}
 
+		/// <summary>
+		/// Metodo para dibujar el tablero por tipo de tablero especificado (Americano o Europeo)
+		/// </summary>
+		private void DrawBoard(string boardName)
+		{	
+			// obtiene de los recursos "carpeta Resources" el objeto "HoleBoard"	
+			GameObject holeBoard = Resources.Load("HoleBoard") as GameObject;
+
+
+		}
+
 	}
 }
