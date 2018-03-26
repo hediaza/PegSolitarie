@@ -72,6 +72,12 @@ namespace PegSolitarie
 				// instancia el objeto "HoleBoard"
 				GameObject holeBoardInstance = Instantiate(holeBoard);
 
+				// posiciona el objeto instanciado convirtiendo la coordenada
+				// en una posicion 3D del tablero
+				Vector3 position = ConvertCoordToPosition(coord.x, coord.y);
+				position.y = 0f;
+				holeBoardInstance.transform.localPosition = position;
+
 			}
 		}
 
