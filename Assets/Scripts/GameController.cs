@@ -66,7 +66,13 @@ namespace PegSolitarie
 
 			// se obtiene la lista de coordenadas de cada hueco de tablero
 			IList<Coord> boardCoords = this.boardsConfig[boardName];
-		
+
+			// itera cada una de las coordenadas
+			foreach (var coord in boardCoords) {
+				// instancia el objeto "HoleBoard"
+				GameObject holeBoardInstance = Instantiate(holeBoard);
+
+			}
 		}
 
 	}
