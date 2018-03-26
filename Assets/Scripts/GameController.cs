@@ -28,10 +28,15 @@ namespace PegSolitarie
 		public IDictionary<string,IList<Coord>> boardsConfig;
 
 		/// <summary>
-		/// diccionario de almacena como llave la instancia del objeto ficha 
+		/// diccionario que almacena como llave la instancia del objeto ficha 
 		/// y su valor representa la coordenada del mismo
 		/// </summary>
 		public Dictionary<GameObject, Coord> pegs;
+
+		/// <summary>
+		/// configuración de fichas para cada uno de los niveles
+		/// </summary>
+		public IDictionary<string,IList<Coord>> pegsLevelConfig;
 
 		/// <summary>
 		/// Constructor de la clase utilizado para inicializaciones
