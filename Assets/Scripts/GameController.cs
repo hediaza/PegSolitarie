@@ -51,6 +51,8 @@ namespace PegSolitarie
 		public GameController()
 		{
 			this.holesBoard = new Dictionary<GameObject,Coord>();
+			this.pegs = new Dictionary<GameObject, Coord>();
+			this.loginTableGame = new int?[7, 7];
 		}
 
 		/// <summary>
