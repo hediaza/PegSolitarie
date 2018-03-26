@@ -104,6 +104,13 @@ namespace PegSolitarie
 						new Coord(4,3), new Coord(0,4), new Coord(1,4), new Coord(2,4), new Coord(4,4),
 						new Coord(5,4), new Coord(6,4)
 					}
+				},
+				{
+					"PLUS", 
+					new List<Coord> {
+						new Coord(3,1), new Coord(3,2), new Coord(1,3), new Coord(2,3), new Coord(3,3), 
+						new Coord(3,4), new Coord(3,5)
+					} 
 				}
 			};
 
