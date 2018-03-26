@@ -64,7 +64,9 @@ namespace PegSolitarie
 			// obtiene de los recursos "carpeta Resources" el objeto "HoleBoard"	
 			GameObject holeBoard = Resources.Load("HoleBoard") as GameObject;
 
-
+			// se obtiene la lista de coordenadas de cada hueco de tablero
+			IList<Coord> boardCoords = this.boardsConfig[boardName];
+		
 		}
 
 	}
