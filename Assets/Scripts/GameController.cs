@@ -28,6 +28,12 @@ namespace PegSolitarie
 		public IDictionary<string,IList<Coord>> boardsConfig;
 
 		/// <summary>
+		/// diccionario de almacena como llave la instancia del objeto ficha 
+		/// y su valor representa la coordenada del mismo
+		/// </summary>
+		public Dictionary<GameObject, Coord> pegs;
+
+		/// <summary>
 		/// Constructor de la clase utilizado para inicializaciones
 		/// </summary>
 		public GameController()
@@ -68,7 +74,7 @@ namespace PegSolitarie
 			IList<Coord> boardCoords = this.boardsConfig[boardName];
 
 			// itera cada una de las coordenadas
-			foreach (var coord in boardCoords) {
+			foreach (var coord in boardCoords) {	
 				// instancia el objeto "HoleBoard"
 				GameObject holeBoardInstance = Instantiate(holeBoard);
 
