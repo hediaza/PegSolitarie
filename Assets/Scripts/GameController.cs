@@ -82,7 +82,8 @@ namespace PegSolitarie
 				// el objeto instanciado y el valor es la coordenada del mismo
 				this.holesBoard.Add(holeBoardInstance, coord);
 
-
+				// representa con "0" que la coordenada esta vacia para la logica del juego
+				this.loginTableGame[coord.x, coord.y] = 0;
 			}
 		}
 
