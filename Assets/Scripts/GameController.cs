@@ -78,6 +78,11 @@ namespace PegSolitarie
 				position.y = 0f;
 				holeBoardInstance.transform.localPosition = position;
 
+				// crea la referencia al diccionario "holesBoard" donde la llave es
+				// el objeto instanciado y el valor es la coordenada del mismo
+				this.holesBoard.Add(holeBoardInstance, coord);
+
+
 			}
 		}
 
