@@ -39,6 +39,13 @@ namespace PegSolitarie
 		public IDictionary<string,IList<Coord>> pegsLevelConfig;
 
 		/// <summary>
+		/// Matriz de 7*7 que representa la logica del juego
+		/// 0 = coordenada vacia
+		/// 1 = coordenada llena con ficha
+		/// </summary>
+		public int?[,] loginTableGame;
+
+		/// <summary>
 		/// Constructor de la clase utilizado para inicializaciones
 		/// </summary>
 		public GameController()
