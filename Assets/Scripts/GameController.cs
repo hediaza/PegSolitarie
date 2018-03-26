@@ -48,5 +48,13 @@ namespace PegSolitarie
 			}
 		}
 
+		/// <summary>
+		/// Metodo reservado de Unity llamado en cada frame del juego en ejecución
+		/// </summary>
+		public void Update()
+		{
+			//TODO: implementación de animaciones...
+		}
+
 	}
 }
