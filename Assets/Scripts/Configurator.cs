@@ -85,6 +85,16 @@ namespace PegSolitarie
 						new Coord(3,4), new Coord(2,5), new Coord(3,5), new Coord(4,5), new Coord(2,6), 
 						new Coord(3,6), new Coord(4,6)
 					} 
+				},
+				{
+					"DIAMONT",
+					new List<Coord> {
+						new Coord(3,0), new Coord(2,1), new Coord(3,1), new Coord(4,1), new Coord(1,2),
+						new Coord(2,2), new Coord(3,2), new Coord(4,2), new Coord(5,2), new Coord(0,3),
+						new Coord(1,3), new Coord(2,3), new Coord(4,3), new Coord(5,3), new Coord(6,3),
+						new Coord(1,4), new Coord(2,4), new Coord(3,4), new Coord(4,4), new Coord(5,4),
+						new Coord(2,5), new Coord(3,5), new Coord(4,5), new Coord(3,6)
+					}
 				}
 			};
 
