@@ -16,6 +16,11 @@ namespace PegSolitarie
 		/// </summary>
 		public static GameController Instance { get; private set;}
 
+		/// <summary>
+		/// diccionario de almacena como llave la instancia del objeto hueco 
+		/// y su valor representa la coordenada del mismo
+		/// </summary>
+		public Dictionary<GameObject,Coord> holesBoard;
 
 		/// <summary>
 		/// Metodo reservado de Unity para inicializar componente sin importar su estado
