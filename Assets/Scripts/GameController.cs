@@ -23,6 +23,11 @@ namespace PegSolitarie
 		public Dictionary<GameObject,Coord> holesBoard;
 
 		/// <summary>
+		/// configuración de tableros "Americano y Europeo"
+		/// </summary>
+		public IDictionary<string,IList<Coord>> boardsConfig;
+
+		/// <summary>
 		/// Metodo reservado de Unity para inicializar componente sin importar su estado
 		/// actua como un constructor de la clase con la diferencia que es controlado por el motor
 		/// </summary>
