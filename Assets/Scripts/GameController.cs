@@ -132,6 +132,15 @@ namespace PegSolitarie
 			// se especifica el hueco del tablero que ha sido seleccionado para el contexto de la clase
 			this.holeBoardSelected = holeBoard;
 
+			// se valida que el movimiento de la ficha hacia el hueco del tablero seleccionado sea permitido
+			Coord coordHole = this.holesBoard[holeBoardSelected];
+			Coord coordPeg = this.pegs[pegSelected];
+
+			if (!ValidatePegMovement(coordHole, coordPeg)) {
+				Debug.Log("Error! (movimiento invalido)");
+				return;
+			}
+				
 		}
 
 		/// <summary>
