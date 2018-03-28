@@ -69,6 +69,18 @@ namespace PegSolitarie
 		}
 
 		/// <summary>
+		/// Metodo reservado de Unity para inicializar componente en modo activo
+		/// </summary>
+		public void Start()
+		{		
+			this.boardsConfig = Configurator.GetBoardsConfig();
+			DrawBoard("ENGLISH_BOARD");
+
+			this.pegsLevelConfig = Configurator.GetPegsLevelConfig();
+			DrawPegsByLevel("CROSS");
+		}
+
+		/// <summary>
 		/// Metodo reservado de Unity llamado en cada frame del juego en ejecución
 		/// </summary>
 		public void Update()
