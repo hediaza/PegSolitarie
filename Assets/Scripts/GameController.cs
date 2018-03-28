@@ -119,5 +119,22 @@ namespace PegSolitarie
 			}
 		}
 
+		/// <summary>
+		/// Convierte coordenada del juego x,y en una posicion 3D en el plano del juego, 
+		/// el tablero esta centrado en la posicion (0,0,0) y la distancia entre fichas es de "1" 
+		/// </summary>
+		/// <returns>Posición 3D</returns>
+		/// <param name="x">Coordenada en X</param>
+		/// <param name="y">Coordenada en Y</param>
+		private Vector3 ConvertCoordToPosition(int x, int y)
+		{
+			Vector3 position = Vector3.zero;
+			position.x = x - 3;
+			position.y = 0.35f;
+			position.z = -y + 3;
+
+			return position;
+		}
+
 	}
 }
