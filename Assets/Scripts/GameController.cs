@@ -28,6 +28,11 @@ namespace PegSolitarie
 		public IDictionary<string,IList<Coord>> boardsConfig;
 
 		/// <summary>
+		/// referencia a objeto hueco instanciado seleccionado
+		/// </summary>
+		public GameObject holeBoardSelected;
+
+		/// <summary>
 		/// diccionario que almacena como llave la instancia del objeto ficha 
 		/// y su valor representa la coordenada del mismo
 		/// </summary>
