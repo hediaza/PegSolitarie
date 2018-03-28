@@ -129,7 +129,8 @@ namespace PegSolitarie
 		/// </summary>
 		private void DrawPegsByLevel(string levelName)
 		{		
-
+			// obtiene de los recursos "carpeta Resources" el objeto "Peg"
+			GameObject peg = Resources.Load("Peg") as GameObject;
 		}
 
 		/// <summary>
