@@ -140,7 +140,13 @@ namespace PegSolitarie
 				Debug.Log("Error! (movimiento invalido)");
 				return;
 			}
-				
+
+			// mueve la ficha en el tablero
+			Debug.Log("Ok (movimiento valido)");
+			MovePegToCoord(coordHole, coordPeg);
+
+			// se valida si el jugador ha ganado o perdido el juego 
+			// TODO: implementar metodo que se encarge de dicha validación
 		}
 
 		/// <summary>
