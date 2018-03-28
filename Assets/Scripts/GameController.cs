@@ -125,6 +125,14 @@ namespace PegSolitarie
 		}
 
 		/// <summary>
+		/// Metodo para dibujar las fichas dependiendo del nivel especificado
+		/// </summary>
+		private void DrawPegsByLevel(string levelName)
+		{		
+
+		}
+
+		/// <summary>
 		/// Metodo llamado al seleccionar el hueco con el ratón
 		/// </summary>
 		/// <param name="peg">Objeto que representa la ficha</param>
