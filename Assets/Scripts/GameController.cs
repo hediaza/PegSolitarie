@@ -125,6 +125,16 @@ namespace PegSolitarie
 		}
 
 		/// <summary>
+		/// Metodo llamado al seleccionar el hueco con el ratón
+		/// </summary>
+		/// <param name="peg">Objeto que representa la ficha</param>
+		public void SelectHoleBoard(GameObject holeBoard) {
+			// se especifica el hueco del tablero que ha sido seleccionado para el contexto de la clase
+			this.holeBoardSelected = holeBoard;
+
+		}
+
+		/// <summary>
 		/// Convierte coordenada del juego x,y en una posicion 3D en el plano del juego, 
 		/// el tablero esta centrado en la posicion (0,0,0) y la distancia entre fichas es de "1" 
 		/// </summary>
