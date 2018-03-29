@@ -141,6 +141,12 @@ namespace PegSolitarie
 				// instancia el objeto "Peg"
 				GameObject pegInstance = Instantiate(peg);
 
+				// posiciona el objeto instanciado convirtiendo la coordenada
+				// en una posicion 3D del tablero
+				Vector3 position = ConvertCoordToPosition(coord.x, coord.y);
+				position.y = 0.35f;
+				pegInstance.transform.localPosition = position;
+
 			}
 		
 		}
