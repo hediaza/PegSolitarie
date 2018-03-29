@@ -33,6 +33,11 @@ namespace PegSolitarie
 		public GameObject holeBoardSelected;
 
 		/// <summary>
+		/// referencia a objeto ficha instanciada seleccionada
+		/// </summary>
+		public GameObject pegSelected;
+
+		/// <summary>
 		/// diccionario que almacena como llave la instancia del objeto ficha 
 		/// y su valor representa la coordenada del mismo
 		/// </summary>
