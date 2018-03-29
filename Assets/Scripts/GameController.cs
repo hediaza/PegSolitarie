@@ -138,7 +138,9 @@ namespace PegSolitarie
 
 			// itera cada una de las coordenadas
 			foreach (var coord in coordsLevel) {
-				
+				// instancia el objeto "Peg"
+				GameObject pegInstance = Instantiate(peg);
+
 			}
 		
 		}
