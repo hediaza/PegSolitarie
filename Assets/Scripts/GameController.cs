@@ -232,5 +232,16 @@ namespace PegSolitarie
 			return position;
 		}
 
+		/// <summary>
+		/// Mueve la ficha en el tablero 
+		/// Elimina la ficha del tablero intermendia
+		/// Actualiza la lógica del juego en la matriz 7*7
+		/// </summary>
+		/// <param name="coordHole">Coordenada del hueco donde se pretende mover la ficha</param>
+		/// <param name="coordPeg">Coordenada de la ficha seleccionada</param>
+		private void MovePegToCoord(Coord coordHole, Coord coordPeg) {
+			
+		}
+
 	}
 }
