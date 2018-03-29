@@ -135,6 +135,12 @@ namespace PegSolitarie
 			// se obtiene la lista de coordenadas de cada ficha
 			IList<Coord> coordsLevel = this.pegsLevelConfig[levelName]; 
 
+
+			// itera cada una de las coordenadas
+			foreach (var coord in coordsLevel) {
+				
+			}
+		
 		}
 
 		/// <summary>
