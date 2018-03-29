@@ -250,6 +250,14 @@ namespace PegSolitarie
 			//-----------------------------------------------------------------
 			this.loginTableGame[coordPeg.x, coordPeg.y] = 0; 
 
+			//-----------------------------------------------------------------
+			// Actualiza coordenada de hueco con ficha "1"
+			// Mueve ficha seleccionada a nueva ubicación
+			//-----------------------------------------------------------------
+			loginTableGame[coordHole.x, coordHole.y] = 1;
+			this.pegs[pegSelected] = new Coord (coordHole.x, coordHole.y);
+			this.pegSelected.transform.position = ConvertCoordToPosition(coordHole.x, coordHole.y);
+
 
 		}
 
