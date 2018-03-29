@@ -245,6 +245,12 @@ namespace PegSolitarie
 			int deltaY = coordHole.y - coordPeg.y;
 			int coordPegTargetX, coordPegTargetY;
 
+			//-----------------------------------------------------------------
+			// Actualiza coordenada de ficha seleccionada con espacio vacio "0"
+			//-----------------------------------------------------------------
+			this.loginTableGame[coordPeg.x, coordPeg.y] = 0; 
+
+
 		}
 
 	}
