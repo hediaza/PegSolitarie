@@ -258,7 +258,28 @@ namespace PegSolitarie
 			this.pegs[pegSelected] = new Coord (coordHole.x, coordHole.y);
 			this.pegSelected.transform.position = ConvertCoordToPosition(coordHole.x, coordHole.y);
 
+			//-----------------------------------------------------------------
+			// Actualiza coordenada de ficha objetivo con espacio vacio "0"
+			// Elimina ficha objetivo
+			//-----------------------------------------------------------------
+			if (deltaX == 0) { 
+				coordPegTargetX = coordPeg.x;
+				coordPegTargetY = coordPeg.y + (deltaY > 0 ? 1 : -1);	
+			} else { 
+				coordPegTargetX = coordPeg.x + (deltaX > 0 ? 1 : -1);
+				coordPegTargetY = coordPeg.y;
+			}
 
+			this.loginTableGame[coordPegTargetX, coordPegTargetY] = 0;
+			foreach (var item in this.pegs) {
+				if (item.Value.x == coordPegTargetX && 
+					item.Value.y == coordPegTargetY && 
+					item.Key.activeInHierarchy) {
+
+					item.Key.gameObject.SetActive(false);
+					break;
+				}
+			}
 		}
 
 	}
