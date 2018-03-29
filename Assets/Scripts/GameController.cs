@@ -167,7 +167,8 @@ namespace PegSolitarie
 			// se especifica la ficha que ha sido seleccionada para el contexto de la clase
 			this.pegSelected = peg;
 
-
+			// se actualiza el color de la ficha seleccionada
+			SetColorToPegSelected(peg);
 		}
 
 		/// <summary>
