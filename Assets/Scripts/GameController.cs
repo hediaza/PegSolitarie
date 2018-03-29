@@ -160,6 +160,14 @@ namespace PegSolitarie
 		}
 
 		/// <summary>
+		/// Especifica el color de la ficha seleccionada
+		/// </summary>
+		/// <param name="peg">ficha seleccionada</param>
+		private void SetColorToPegSelected(GameObject peg) {
+			
+		}
+
+		/// <summary>
 		/// Metodo llamado al seleccionar el hueco con el ratón
 		/// </summary>
 		/// <param name="peg">Objeto que representa la ficha</param>
