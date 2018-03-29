@@ -240,7 +240,11 @@ namespace PegSolitarie
 		/// <param name="coordHole">Coordenada del hueco donde se pretende mover la ficha</param>
 		/// <param name="coordPeg">Coordenada de la ficha seleccionada</param>
 		private void MovePegToCoord(Coord coordHole, Coord coordPeg) {
-			
+			// Inicialización de variables
+			int deltaX = coordHole.x - coordPeg.x;
+			int deltaY = coordHole.y - coordPeg.y;
+			int coordPegTargetX, coordPegTargetY;
+
 		}
 
 	}
