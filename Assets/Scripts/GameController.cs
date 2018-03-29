@@ -164,7 +164,11 @@ namespace PegSolitarie
 		/// </summary>
 		/// <param name="peg">ficha seleccionada</param>
 		private void SetColorToPegSelected(GameObject peg) {
-			
+			// Restablece el color de todas las fichas por defecto
+			foreach (var item in this.pegs) {
+				item.Key.gameObject.GetComponent<Renderer>().material.color = new Color(1f, 0.724f, 0f, 1f);
+			}
+
 		}
 
 		/// <summary>
