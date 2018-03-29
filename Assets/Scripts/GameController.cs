@@ -131,6 +131,10 @@ namespace PegSolitarie
 		{		
 			// obtiene de los recursos "carpeta Resources" el objeto "Peg"
 			GameObject peg = Resources.Load("Peg") as GameObject;
+
+			// se obtiene la lista de coordenadas de cada ficha
+			IList<Coord> coordsLevel = this.pegsLevelConfig[levelName]; 
+
 		}
 
 		/// <summary>
