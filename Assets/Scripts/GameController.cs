@@ -147,6 +147,11 @@ namespace PegSolitarie
 				position.y = 0.35f;
 				pegInstance.transform.localPosition = position;
 
+
+				// crea la referencia al diccionario "pegs" donde la llave es
+				// el objeto instanciado y el valor es la coordenada del mismo
+				this.pegs.Add(pegInstance, coord);
+
 			}
 		
 		}
