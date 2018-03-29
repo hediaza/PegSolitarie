@@ -152,6 +152,9 @@ namespace PegSolitarie
 				// el objeto instanciado y el valor es la coordenada del mismo
 				this.pegs.Add(pegInstance, coord);
 
+				// representa con "1" la coordenada esta ocupada con una ficha 
+				// para la logica del juego
+				this.loginTableGame[coord.x, coord.y] = 1;
 			}
 		
 		}
