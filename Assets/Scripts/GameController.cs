@@ -160,6 +160,14 @@ namespace PegSolitarie
 		}
 
 		/// <summary>
+		/// Metodo llamado al seleccionar la ficha con el ratón
+		/// </summary>
+		/// <param name="peg">Objeto que representa la ficha</param>
+		public void SelectPeg(GameObject peg) {
+
+		}
+
+		/// <summary>
 		/// Especifica el color de la ficha seleccionada
 		/// </summary>
 		/// <param name="peg">ficha seleccionada</param>
