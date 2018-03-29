@@ -164,6 +164,9 @@ namespace PegSolitarie
 		/// </summary>
 		/// <param name="peg">Objeto que representa la ficha</param>
 		public void SelectPeg(GameObject peg) {
+			// se especifica la ficha que ha sido seleccionada para el contexto de la clase
+			this.pegSelected = peg;
+
 
 		}
 
