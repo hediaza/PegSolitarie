@@ -169,6 +169,8 @@ namespace PegSolitarie
 				item.Key.gameObject.GetComponent<Renderer>().material.color = new Color(1f, 0.724f, 0f, 1f);
 			}
 
+			// Cambia el color de la ficha seleccionada
+			peg.GetComponent<Renderer>().material.color = new Color(0f, 0f, 0f);
 		}
 
 		/// <summary>
