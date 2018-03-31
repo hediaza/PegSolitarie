@@ -109,9 +109,9 @@ namespace PegSolitarie
 					"PLUS", 
 					new List<Coord> {
 						new Coord(3,1), new Coord(3,2), new Coord(1,3), new Coord(2,3), new Coord(3,3), 
-						new Coord(3,4), new Coord(3,5)
+						new Coord(4,3), new Coord(5,3), new Coord(3,4), new Coord(3,5)
 					}
-				}
+				}	
 			};
 
 			return config;
