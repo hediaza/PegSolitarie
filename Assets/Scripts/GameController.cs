@@ -282,5 +282,16 @@ namespace PegSolitarie
 			}
 		}
 
+		/// <summary>
+		/// Valida que el movimiento de la ficha hacia el hueco del tablero seleccionado sea permitido
+		/// para ello recibe como parametros las coordenadas del hueco y la ficha
+		/// </summary>
+		/// <returns><c>true</c>, si el movimiento es validado, <c>false</c> de lo contrario.</returns>
+		/// <param name="coordHole">Coordenada de hueco</param>
+		/// <param name="coordPeg">Coordenada de ficha</param>
+		private bool ValidatePegMovement(Coord coordHole, Coord coordPeg) {
+			
+		}
+
 	}
 }
