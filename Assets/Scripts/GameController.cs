@@ -87,7 +87,7 @@ namespace PegSolitarie
 			DrawBoard("ENGLISH_BOARD");
 
 			this.pegsLevelConfig = Configurator.GetPegsLevelConfig();
-			DrawPegsByLevel("CROSS");
+			DrawPegsByLevel("BUTACO_DOBLE");
 		}
 
 		/// <summary>
