@@ -202,10 +202,10 @@ namespace PegSolitarie
 			Coord coordHole = this.holesBoard[holeBoardSelected];
 			Coord coordPeg = this.pegs[pegSelected];
 
-			//if (!ValidatePegMovement(coordHole, coordPeg)) {
-			//	Debug.Log("Error! (movimiento invalido)");
-			//	return;
-			//}
+			if (!ValidatePegMovement(coordHole, coordPeg)) {
+				Debug.Log("Error! (movimiento invalido)");
+				return;
+			}
 
 			// mueve la ficha en el tablero
 			Debug.Log("Ok (movimiento valido)");
