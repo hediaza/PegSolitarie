@@ -332,6 +332,12 @@ namespace PegSolitarie
 			if (coordStatus != 1) {
 				return false;
 			}
+
+			//-----------------------------------------------------------------------
+			// finalmente si todas las validaciones se aprobaron se considera que 
+			// el movimiento esta permitido
+			//-----------------------------------------------------------------------
+			return true;
 		}
 
 	}
