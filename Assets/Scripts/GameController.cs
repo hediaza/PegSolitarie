@@ -294,6 +294,16 @@ namespace PegSolitarie
 			int deltaX = coordHole.x - coordPeg.x;
 			int deltaY = coordHole.y - coordPeg.y;
 
+			//-----------------------------------------------------------------------
+			// Valida que el movimiento se realice de forma horizontal 
+			// o vertical y que la distancia desde la ficha seleccionada sea 2 
+			//-----------------------------------------------------------------------
+			if (deltaX != 0 && deltaY != 0) {
+				return false;
+			}
+			if (Mathf.Abs(deltaX) != 2 && Mathf.Abs(deltaY) != 2) {
+				return false;
+			}
 		}
 
 	}
