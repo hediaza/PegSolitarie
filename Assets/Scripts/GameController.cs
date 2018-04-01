@@ -290,7 +290,10 @@ namespace PegSolitarie
 		/// <param name="coordHole">Coordenada de hueco</param>
 		/// <param name="coordPeg">Coordenada de ficha</param>
 		private bool ValidatePegMovement(Coord coordHole, Coord coordPeg) {
-			
+			// Inicialización de variables
+			int deltaX = coordHole.x - coordPeg.x;
+			int deltaY = coordHole.y - coordPeg.y;
+
 		}
 
 	}
