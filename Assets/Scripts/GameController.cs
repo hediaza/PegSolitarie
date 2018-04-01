@@ -312,6 +312,26 @@ namespace PegSolitarie
 			if (coordStatus != 0) {
 				return false;
 			}
+
+			//-----------------------------------------------------------------------
+			// Valida que exista una ficha para eliminar entre la ficha seleccionada 
+			// y el hueco destino, debe identificar si el movimiento fue vertical o
+			// horizontal para dicho calculo
+			//-----------------------------------------------------------------------
+			int coordPegTargetX, coordPegTargetY;
+			// movimiento vertical
+			if (deltaX == 0) { 
+				coordPegTargetX = coordPeg.x;
+				coordPegTargetY = coordPeg.y + (deltaY > 0 ? 1 : -1);
+				// movimiento horizontal
+			} else { 
+				coordPegTargetX = coordPeg.x + (deltaX > 0 ? 1 : -1);
+				coordPegTargetY = coordPeg.y;
+			}
+			coordStatus = loginTableGame[coordPegTargetX, coordPegTargetY];
+			if (coordStatus != 1) {
+				return false;
+			}
 		}
 
 	}
