@@ -304,6 +304,14 @@ namespace PegSolitarie
 			if (Mathf.Abs(deltaX) != 2 && Mathf.Abs(deltaY) != 2) {
 				return false;
 			}
+
+			//-----------------------------------------------------------------------
+			// Valida que la coordenada destino este disponible y no exista una ficha
+			//-----------------------------------------------------------------------
+			int? coordStatus = loginTableGame[coordHole.x, coordHole.y];
+			if (coordStatus != 0) {
+				return false;
+			}
 		}
 
 	}
